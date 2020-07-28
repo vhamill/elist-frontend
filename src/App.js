@@ -13,6 +13,8 @@ import Footer from './components/Footer';
 
 import bearded_dragon from "./assets/bearded_dragon-smile.jpg";
 import mario3 from "./assets/SMB3Wallpaper.jpg";
+import LogInPage from './pages/LogInPage';
+import SignUpPage from './pages/SignUpPage';
 
 class App extends React.Component {
 
@@ -130,6 +132,9 @@ class App extends React.Component {
 
           <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} items={this.state.items}/>} />
           <Route path="/newentry" exact render={() => <NewEntry />} />
+          <Route path="/login" exact render={() => <LogInPage />} />
+          <Route path="/signup" exact render={() => <SignUpPage />} />
+
 
           <Footer />
 
